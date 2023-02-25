@@ -1,7 +1,9 @@
+//import { getProducts } from "../domains/products";
+
 import { getProducts } from "../domains/products";
 
 export default async function Home() {
-  const products = await getProducts();
+  const products = await getProducts({});
 
   return (
     <div className="w-full h-full p-8 max-h-[78vh] overflow-auto">
